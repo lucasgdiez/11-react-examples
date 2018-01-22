@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
+import Header from './Header';
+
 
 export default class App extends Component {
 
     constructor() {
         super();
+    
+        this.state = {
+            title: 'React Clock'
+        };
+    
     }
 
     render() {
         return (
             <div className='container'>
-                <div className='title'>React Starter</div>
-                <img className='logo' src={logo} />
+                <Header title={this.state.title}/>
             </div>
         );
     }
