@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
+import Header from './Header';
+import Clicker from './Clicker';
 
-export default class App extends Component {
+export default class ClickerApp extends Component {
 
     constructor() {
         super();
+
+        this.state = {
+            title: 'React Clicker'
+        };
     }
 
     render() {
         return (
-            <div className='container'>
-                <div className='title'>React Starter</div>
-                <img className='logo' src={logo} />
+            <div>
+                <Header title={this.state.title} />
+                <div className="mt-5">
+                    <Clicker />
+                </div>
             </div>
         );
     }

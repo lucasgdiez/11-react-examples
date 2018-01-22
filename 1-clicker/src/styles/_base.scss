@@ -1,5 +1,5 @@
 body {
-    background-color: $charcoal;
+    background-color: $background-global-color;
     font-family: $font-family;
 }
 
@@ -19,4 +19,8 @@ body {
     margin-top: 20px;
     text-transform: uppercase;    
     text-align: center;
+}
+
+.btn {
+    border-radius: 0 !important;
 }
