@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Header = (props) => (
-    <nav className=" header navbar navbar-dark bg-dark">
+    <nav className="header navbar">
         <div className="container">
             <div className="row m-auto">
                 <i className="fa fa-hand-pointer-o fa-4x text-white"></i>

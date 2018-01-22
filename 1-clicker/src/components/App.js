@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-/*import Clicker from './Clicker';*/
+import Clicker from './Clicker';
 
 export default class ClickerApp extends Component {
 
@@ -16,7 +16,9 @@ export default class ClickerApp extends Component {
         return (
             <div>
                 <Header title={this.state.title} />
-                <div></div>
+                <div className="mt-5">
+                    <Clicker />
+                </div>
             </div>
         );
     }
