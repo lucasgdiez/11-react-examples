@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Clock from './Clock';
 import Header from './Header';
 
 
@@ -15,8 +16,9 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div>
                 <Header title={this.state.title}/>
+                <Clock />
             </div>
         );
     }
