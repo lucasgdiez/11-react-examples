@@ -11,6 +11,8 @@ class Clock extends Component {
             date: new Date(),
             isDateVisible: true
         };
+
+        this.toggleDate = this.toggleDate.bind(this);
     }
 
 
