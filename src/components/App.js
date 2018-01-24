@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
+import Header from './Header';
+import Timer from './Timer/Timer';
 
 export default class App extends Component {
 
     constructor() {
         super();
+    
+        this.state = {
+            title: 'React Timer'
+        };
+    
     }
 
     render() {
         return (
-            <div className='container'>
-                <div className='title'>React Starter</div>
-                <img className='logo' src={logo} />
+          <div>
+            <Header title={this.state.title} />
+            <div className="mt-5">
+              <Timer />
             </div>
+          </div>
         );
     }
 }
