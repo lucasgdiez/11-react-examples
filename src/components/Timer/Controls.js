@@ -33,7 +33,7 @@ const Controls = (
                         <div className="text-left">
                             <i className="fa fa-refresh fa-2x m1-2 mb-3"/>
                         </div>
-                        </button>
+                    </button>
                 </div>
             </div>
         </div>
